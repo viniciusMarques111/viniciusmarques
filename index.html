@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de PIN</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Verificação de PIN</h1>
+        <p class="instruction">Digite um número de pelo menos quatro dígitos entre 1000 e 9999:</p>
+        <input type="number" id="userPin" class="pin-input" min="1000">
+        <button onclick="verificarPin()" class="verify-button">Verificar</button>
+        <p id="message" class="message"></p>
+        <button onclick="reiniciarJogo()" id="reiniciar" class="restart-button" disabled>Reiniciar</button>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>
